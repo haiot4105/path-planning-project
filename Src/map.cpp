@@ -312,6 +312,15 @@ bool Map::getMap(const char *FileName)
 }
 
 
+std::pair<int, int> Map::getStart() const {
+    return {start_i, start_j};
+}
+
+
+std::pair<int, int> Map::getEnd() const {
+    return {goal_i, goal_j};
+}
+
 
 int Map::getValue(int i, int j) const
 {

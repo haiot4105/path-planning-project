@@ -7,7 +7,7 @@
 #include <string>
 #include <algorithm>
 #include "tinyxml2.h"
-
+#include <vector>
 //That's the class that stores BOTH grid map data AND start-goal locations.
 //getValue reads the input XML and fills the Map object.
 //Some naive checks are already included in getValue but still on some corrupted XMLs it may fail,
@@ -39,6 +39,9 @@ class Map
         int getMapHeight() const;
         int getMapWidth() const;
         double getCellSize() const;
+        std::pair<int, int> getStart() const;
+        std::pair<int, int> getEnd() const;
+
 
 };
 

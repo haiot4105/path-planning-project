@@ -10,6 +10,7 @@ Search::~Search() {}
 
 SearchResult Search::startSearch(ILogger *Logger, const Map &map, const EnvironmentOptions &options)
 {
+    Node cur_node = Node(map.getStart());
     //need to implement
 
     /*sresult.pathfound = ;
